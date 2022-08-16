@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Site Icon -->
+    <link rel="icon" href="{% static 'src/custom/img/tec_logo.png' %}">
+
+    <!-- Google font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/35116388ad.js" crossorigin="anonymous"></script>
+    
+    <!-- Materialize Css -->
+    <link rel="stylesheet" href="{% static 'src/materialize/css/materialize.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'src/custom/style.css' %}">
+    
+    <title>Tec Electricals</title>
+</head>
+<body>
+    
+    <!-- ==================== NavBar ====================== -->
+    <div class="navbar-fixed">
+        <nav class="blue-grey">
+            <div class="nav-wrapper container">
+                <a href="/" class="brand-logo left">
+                    <img src="{% static 'src/custom/img/tec_logo.png' %}" alt="">
+                </a>
+                <a href="#!" data-target="mobile-demo" class="sidenav-trigger right"><i class="fa-solid fa-bars"></i></a>
+                <ul class="right hide-on-med-and-down">
+                    {% if url_path == 'index' %}
+                        <li><a href="/">Home</a></li>
+                        <li><a href="#offerredSevice">Service</a></li>
+                        <li><a href="#why-tec">Detail</a></li>
+                        <li><a href="{% url 'projects' %}">Projects</a></li>
+                        <li><a href="#contact-tec">Contact</a></li>
+                        <li><a href="{% url 'about' %}">About</a></li>
+                    {% else %}
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/#offerredSevice">Service</a></li>
+                        <li><a href="/#why-tec">Detail</a></li>
+                        <li><a href="{% url 'projects' %}">Projects</a></li>
+                        <li><a href="/#contact-tec">Contact</a></li>
+                        <li><a href="{% url 'about' %}">About</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+      <!-- =============== Navbar mobile Trigger ================== -->
+    <div class="sidenav blue-grey" id="mobile-demo">
+        <h4>Menu</h4>
+
+        <ul class="row">
+            <li class="col s6">
+                <a href="/">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="col s6">
+                <a href="#offerredSevice">
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <span>Service</span>
+                </a>
+            </li>
+            <li class="col s6">
+                <a href="#why-tec">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>Detail</span>
+                </a>
+            </li>
+            <li class="col s6">
+                <a href="#">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <span>Products</span>
+                </a>
+            </li>
+            <li class="col s6">
+                <a href="#">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li class="col s6">
+                <a href="#contact-tec">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </li>
+            <li class="col s6">
+                <a href="{% url 'about' %}">
+                    <i class="fa-solid fa-circle-question"></i>
+                    <span>About</span>
+                </a>
+            </li>
+        </ul>
+
+        <div class="copyright"><span>
+            Tec Electricals inc <small>&#169</small> 2022 
+        </span></div>
+    </div>
+        
+
+    
+    {% block content %}
+    {% endblock %}
+
+</body>
+
+<script src="{% static 'src/custom/jquery.js' %}"></script>
+<script src="{% static 'src/materialize/js/materialize.min.js' %}"></script>
+<script src="{% static 'src/custom/script.js' %}"></script>
+
+</html>

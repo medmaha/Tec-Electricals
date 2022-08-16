@@ -1,0 +1,175 @@
+{% extends 'src/base.html'%}
+{% load static %}
+{% block content %}
+    <section class="landing-page">
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col s6 m12">
+                        <div class="intro">
+                            <h1>Tec Electricals</h1>
+                            <h5>Your Off Grid Solution</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <a title="Expore Tec Electrical" href="#offerredSevice" class="btn-floating green lighten-1 pulse"><i class="fa-solid fa-angles-down"></i></a>
+    </section>
+
+    <section id="offerredSevice">
+        <main id="offerredSevices" class="section" >
+            <h2 class="center">Offerred Sevices</h2>
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="service">
+                        <div>
+                            <a href="#">
+                                <i class="fa-solid fa-solar-panel  green-text text-darken-5"></i>
+                                <h3>Solar Installation</h3>
+                            </a>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut aut quo,
+                            voluptatibus beatae doloribus temporibus nemo rerum repellendus nobis eligendi commodi,
+                            debitis tempora unde adipisci molestiae maiores. Expedita, suscipit quidem! <a href="#">View Projects</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col s12 m6">
+                    <div class="service">
+                        <div>
+                            <a href="#">
+                                <i class="fa-solid fa-plug  blue-text text-darken-1"></i>
+                                <h3>Eletrical Wiring</h3>
+                            </a>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut aut quo,
+                            voluptatibus beatae doloribus temporibus nemo rerum repellendus nobis eligendi commodi,
+                            debitis tempora unde adipisci molestiae maiores. Expedita, suscipit quidem! <a href="#">View Projects</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col s12 m6">
+                    <div class="service">
+                        <div>
+                            <a href="#">
+                                <!-- <img src="{% static 'src/custom/img/cctv-1.png' %}"></img> -->
+                                <i class="fa-solid fa-video red-text text-darken-2"></i>
+                                <h3>CCtv Installation</h3>
+                            </a>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut aut quo,
+                            voluptatibus beatae doloribus temporibus nemo rerum repellendus nobis eligendi commodi,
+                            debitis tempora unde adipisci molestiae maiores. Expedita, suscipit quidem! <a href="#">View Projects</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="service">
+                        <div>
+                            <a href="#">
+                                <i class="fa-solid fa-code  yellow-text text-darken-2"></i>
+                                <h3>Web Development</h3>
+                            </a>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut aut quo,
+                            voluptatibus beatae doloribus temporibus nemo rerum repellendus nobis eligendi commodi,
+                            debitis tempora unde adipisci molestiae maiores. Expedita, suscipit quidem! <a href="#">View Projects</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <section id="why-tec">
+        <main class="tecDetail">
+            <h2 class="center">
+                Why Working With Tec
+            </h2>
+            <div class="container-fuild">
+                <div class="row">
+                    <div class="col s12 m7 hide-on-small-only">
+                        <div class="why-tec-img"></div>
+                    </div>
+                    <div class="col s12 hide-on-med-and-up">
+                        <div class="why-tec-image"></div>
+                    </div>
+
+                    <div class="col s12 m5">
+                        <div class="infomation">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.Commodi quae consectetur,
+                                nulla earum voluptate officia dignissimos quisquam! Quae laboriosam debitis porro
+                                esse nemo eos sequi commodi quibusdam consequatur, in error.</p>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.Commodi quae consectetur,
+                                nulla earum voluptate officia dignissimos quisquam! Quae laboriosam debitis porro
+                                esse nemo eos sequi commodi quibusdam consequatur, in error.</p>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.Commodi quae consectetur,
+                                nulla earum voluptate officia dignissimos quisquam! Quae laboriosam debitis porro
+                                esse nemo eos sequi commodi quibusdam consequatur, in error.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <section id="contact-tec">
+        <main  class="container mail-tec">
+            <h2 class="center">Contact Tec</h2>
+
+            <p class="center" id="msg-initial">Your satisfaction is our responsiblity! Will be glad to hear from you</p>
+            
+            <div class="msg-prompt green lighten-2 container" id="msg-prmpt">
+                <p class="center" >Message send! we'll get bact to you before 24hrs TEC ELECTRICAL thabk you!!!</p>
+                <span id="x-prompt">x</span>
+            </div>
+
+            <div class="row">
+                <form class="col s12" id="mail-tec">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="full_name" type="text" class="validate" required>
+                            <label for="full_name">Full Name</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email Address</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input id="subject" type="text" class="validate" required>
+                            <label for="subject">Subject</label>
+                        </div>
+    
+                        <div class="input-field col s12">
+                            <textarea id="message" class="materialize-textarea validate" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                    </div>
+                    <p class="center">
+                        <label>
+                            <input type="checkbox" required/>
+                            <span>
+                                I agreed to let this website store submitted data so they can respond to my inquiry
+                            </span>
+                        </label>
+                    </p>
+
+                    <div class="center">
+                        <button class="btn-large green lighten-1">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        
+    </section>
+
+{% endblock %}

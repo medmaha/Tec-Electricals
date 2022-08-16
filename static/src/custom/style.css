@@ -1,0 +1,358 @@
+
+body{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    background: #f5f5f5;
+    overflow-x: hidden;
+    
+}
+
+h2{
+    font-family: 'Roboto Slab', serif;
+}
+
+.brand-logo {
+    aspect-ratio: 1.1;
+    height: 3.2rem;
+    display: grid;
+    align-items: center;
+    margin: .3rem 0;
+}
+
+div.sidenav {
+    padding-top: 3rem;
+}
+
+div.sidenav .copyright{
+    display: flex;
+    position: relative;
+    height: 45%;
+    flex-flow: column;
+    justify-content: end;
+    align-items: center;
+    color: rgb(30, 30, 31);
+}
+
+div.sidenav .span{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+div.sidenav h4{
+    text-align: center;
+    color: aliceblue;
+}
+
+div.sidenav li a{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sidenav li>a>span,
+.sidenav li>a>i{
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+}
+
+.sidenav li>a>span{
+    margin-top: .2rem;
+} 
+
+.brand-logo img{
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+}
+
+.landing-page{
+    background: linear-gradient(rgba(25, 26, 29, 0.5), rgba(25, 26, 29, 0.5)), url(./img/astronergy-solar-panel-product-shot-1.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+    /* width: 100%; */
+    height: calc(100vh - 4rem); 
+}
+
+header{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    color:aliceblue;
+}
+
+header .intro{
+    background: rgba(35, 38, 48, 0.5);
+    width: fit-content;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header .intro h1{
+    margin: 0;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+}
+
+header .intro h5{
+    color: #00e676;
+}
+
+.landing-page a{
+    position: absolute;
+    bottom: 3rem;
+    right: 1rem;
+}
+
+/* ============== offerred services ===================== */
+
+#offerredSevice{
+    background: #dfdddd;
+    padding: 2rem 0;
+    transition: 2m linear;
+}
+
+#offerredSevices h2{
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+#offerredSevices .service{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #00e676;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 1.2rem;
+    margin: 1.75rem 0;
+}
+
+#offerredSevices .row .col .service p a{
+    margin-left: 1rem;
+    text-decoration: underline;
+}
+
+#offerredSevices .row .col  .service > div{
+    display: flex;
+}
+
+#offerredSevices .row .col .service > div > a{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    gap: .5rem;
+    color: rgb(39, 37, 37);
+}
+
+#offerredSevices .service a i,
+#offerredSevices .service a h3{
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+
+/* ================ Detail Page ======================= */
+
+#why-tec{
+    transition: 2m linear;
+    padding: 2.2rem 0;
+}
+
+#why-tec .tecDetail{
+    margin-bottom: 2rem;
+}
+
+.tecDetail h2{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.tecDetail .container-fuild{
+    margin-top: 2rem;
+}
+
+.tecDetail .why-tec-img{
+    background: linear-gradient(rgba(25, 26, 29, 0.5), rgba(25, 26, 29, 0.5)), url(../custom/img/why-tec.jpg) no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+    min-height: 70vh;
+    
+}
+
+.tecDetail .container-fuild .row .col .infomation{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    min-height: 70vh;
+}
+
+/* =============================== Contact Tec Electricals =========================== */
+
+
+#contact-tec{
+    padding: 2rem 0;
+    transition: 2m linear;
+    background: #dfdddd;
+}
+
+#contact-tec label{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(46, 45, 45);
+}
+
+#contact-tec .mail-tec{
+    margin-bottom: 2rem;
+}
+
+#contact-tec .mail-tec h2{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#contact-tec .mail-tec #msg-initial{
+    margin: 0;
+    padding: 0;
+}
+#contact-tec .msg-prompt{
+    position: relative;
+    display: none;
+    max-width: 500px;
+    border-bottom-left-radius: .5rem;
+    border-top-left-radius: .5rem;
+}
+#contact-tec .msg-prompt p{
+    display: flex;
+    justify-content: center;
+    padding: .5rem 1rem;
+    margin: 0;
+}
+#contact-tec .msg-prompt span{
+    position: absolute;
+    cursor: pointer;
+    right: -.5rem;
+    top: 0;
+    background: rgb(224, 124, 124);
+    height: 100%;
+    padding: 0 .5rem;
+    color: #dfdddd;
+
+    display: flex;
+    align-items: center;
+
+    border-bottom-right-radius: .5rem;
+    border-top-right-radius: .5rem;
+
+}
+
+
+
+
+@media (max-width:1224px){
+    #tecDetail .container-fuild .infomation{
+        min-height: 70vh;
+        font-size: 1rem;
+    }
+}
+
+/* @media (max-width:1279px){
+    #tecDetail .container-fuild .row .col .infomation{
+        min-height: 70vh;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:776px) {
+    h2{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 1.5rem;
+        padding: .5rem 0;
+    }
+    h1,h4{
+        font-size: 1.5rem;
+        letter-spacing: 0px;
+        word-spacing: 0px;
+    }
+    h1{
+        font-size: 1.7rem;
+    }
+
+    #offerredSevices{
+        margin: 1rem 0;
+        padding: 0;
+    }
+    #offerredSevices .row .col .service > div > a{
+        gap: .4rem;
+        color: rgb(61, 59, 59);
+    }
+    #offerredSevices .row{
+        margin: 0;
+    }
+    #offerredSevices .service a i,
+    
+    #offerredSevices .row .col .service p{
+        font-size: 1.2rem;
+        padding: 0;
+    }
+    .tecDetail .why-tec-img{
+        margin-left: 1.5rem;
+    }
+}
+
+@media (max-width:725px){
+    #tecDetail .container-fuild .row .col p{
+        font-size: 1rem;
+        margin: 0;
+    }
+}
+
+@media (max-width:600px) {
+    header{
+        display: flex;
+        justify-content: center;
+    }
+    h1, h4{
+        font-size: 1.4rem;
+        letter-spacing: 0px;
+        word-spacing: 0px;
+    }
+    h1{
+        font-size: 1.7rem;
+    }
+    h2{
+        font-size: 1;
+    }
+
+    #offerredSevices{
+        margin-bottom: 0;
+    }
+    #offerredSevices p{
+        font-size: 1rem;
+    }
+    #tecDetail .container-fuild .row .col p{
+        font-size: 1.1rem;
+        padding-top: 1rem;
+    }
+   
+    .tecDetail .why-tec-image{
+        background: linear-gradient(rgba(25, 26, 29, 0.5), rgba(25, 26, 29, 0.5)), url(../custom/img/why-tec.jpg) no-repeat;
+        background-size: cover;
+        border-radius: 1rem;
+        min-height: 50vh;
+        
+    }
+} */

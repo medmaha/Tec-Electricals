@@ -1,0 +1,31 @@
+{% include 'src/base.html' %}
+
+{% block content %}
+
+
+    {% for prj in projects %}
+        <div class=" row center" style="margin-top: 2rem;">
+            <h4 class="center">Project</h4>
+            <div class="col s12 m12">
+                <div class="container">
+                <div class="container">
+                    
+                    <div class="slider">
+                        <ul class="slides" style="height:500px;">
+                            {% for project in prj %}
+                            <li>
+                                <img src="{{project.project_pictures.url}}" style="object-fit: fill;">
+                                <div class="caption center-align">
+                                    <h3>Location</h3>
+                                    <h5 class="light grey-text text-lighten-3">Client</h5>
+                                </div>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}
